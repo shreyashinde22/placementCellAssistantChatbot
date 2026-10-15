@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Get placement preparation and career guidance from the SNJB Placement Cell Assistant.">
+    <title>Placement Cell Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Chat information">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 6.75A2.75 2.75 0 0 1 7.75 4h8.5A2.75 2.75 0 0 1 19 6.75v6.5A2.75 2.75 0 0 1 16.25 16H11l-4.5 3v-3.5A2.74 2.74 0 0 1 5 13.25v-6.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+              <path d="M8.5 9h7M8.5 12h4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <div>
+            <p class="brand-name">SNJB Placement Cell</p>
+            <p class="brand-caption">Student career assistant</p>
+          </div>
+        </div>
+
+        <button class="new-chat-button" id="new-chat-button" type="button">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          New chat
+        </button>
+
+        <section class="sidebar-note" aria-labelledby="guidance-title">
+          <h2 id="guidance-title">Grounded guidance</h2>
+          <p>SNJB's Late Sau. Kantabai Bhavarlalji Jain College of Engineering</p>
+          <p>Answers use available approved documents. Always confirm current college and employer requirements through official notices.</p>
+        </section>
+
+        <p class="sidebar-footer">Official placement policies and schedules must be confirmed through authorised college channels. Avoid sharing passwords, personal records, or other sensitive information in chat.</p>
+      </aside>
+
+      <main class="chat-area">
+        <header class="topbar">
+          <p class="topbar-label">Career guidance</p>
+          <span class="availability">Assistant ready</span>
+        </header>
+
+        <section class="conversation" aria-label="Conversation">
+          <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+            <span class="welcome-badge">Your placement preparation partner</span>
+            <h1 id="welcome-title">What would you like to work on?</h1>
+            <p>Ask about interview preparation, resumes, aptitude practice, or verified placement information.</p>
+            <div class="suggestions" id="suggestions" aria-label="Suggested questions">
+              <button class="suggestion" type="button" data-prompt="How should I prepare for a technical interview?">Prepare for a technical interview</button>
+              <button class="suggestion" type="button" data-prompt="How can I improve my resume?">Get feedback on my resume</button>
+              <button class="suggestion" type="button" data-prompt="How should I prepare for aptitude tests?">Practice for aptitude tests</button>
+              <button class="suggestion" type="button" data-prompt="How does a typical campus recruitment process work?">Understand the recruitment process</button>
+            </div>
+          </section>
+
+          <div class="message-list" id="message-list" aria-live="polite" aria-relevant="additions"></div>
+          <div class="error-banner" id="error-banner" role="alert" hidden>
+            <span id="error-message"></span>
+            <button class="retry-button" id="retry-button" type="button">Retry</button>
+          </div>
+        </section>
+
+        <div class="composer-wrap">
+          <form class="composer" id="chat-form">
+            <label class="visually-hidden" for="message-input">Your message</label>
+            <textarea id="message-input" name="message" rows="1" maxlength="2000" placeholder="Ask a placement or career question…" autocomplete="off"></textarea>
+            <button class="send-button" id="send-button" type="submit" aria-label="Send message">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m5 12 14-7-4.2 14-3.1-5.2L5 12Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="m11.7 13.8 3.5-3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </form>
+          <p class="composer-hint">Enter to send · Shift + Enter for a new line</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

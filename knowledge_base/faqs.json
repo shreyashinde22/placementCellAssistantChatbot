@@ -1,0 +1,44 @@
+[
+  {
+    "question": "How should I prepare for a technical interview?",
+    "keywords": ["technical interview", "coding interview", "data structures", "algorithms"],
+    "category": "career-prep",
+    "answer": "Practice explaining your approach before coding, test edge cases, and discuss time and space complexity. Review programming fundamentals, data structures, and projects listed on your resume.",
+    "source": "knowledge_base/faqs.json (illustrative general career guidance)"
+  },
+  {
+    "question": "How should I prepare for aptitude tests?",
+    "keywords": ["aptitude", "logical reasoning", "quantitative", "test preparation"],
+    "category": "career-prep",
+    "answer": "Practice quantitative aptitude, logical reasoning, and verbal questions in timed sets. Review incorrect answers to identify patterns, and build accuracy before increasing speed.",
+    "source": "knowledge_base/faqs.json (illustrative general career guidance)"
+  },
+  {
+    "question": "How can I improve my resume?",
+    "keywords": ["resume", "CV", "curriculum vitae", "projects"],
+    "category": "career-prep",
+    "answer": "Keep your resume concise and easy to scan. Tailor it to each role, describe project outcomes clearly, list relevant skills truthfully, and proofread contact details and formatting.",
+    "source": "knowledge_base/faqs.json (illustrative general career guidance)"
+  },
+  {
+    "question": "How should I answer HR interview questions?",
+    "keywords": ["HR interview", "behavioral", "strengths", "teamwork"],
+    "category": "career-prep",
+    "answer": "Use specific, truthful examples when describing teamwork, challenges, and accomplishments. Keep answers focused, explain what you learned, and connect your interests to the role.",
+    "source": "knowledge_base/faqs.json (illustrative general career guidance)"
+  },
+  {
+    "question": "How does a typical campus recruitment process work?",
+    "keywords": ["campus placement", "recruitment process", "placement drive", "selection"],
+    "category": "illustrative-placement-faq",
+    "answer": "A recruitment process may include registration, resume screening, assessments, interviews, and a final decision. Actual steps, eligibility, dates, and documents differ by employer and official college notice.",
+    "source": "knowledge_base/faqs.json (illustrative example only; not verified SNJB policy)"
+  },
+  {
+    "question": "What are the placement eligibility criteria?",
+    "keywords": ["eligibility", "backlogs", "CGPA", "criteria"],
+    "category": "illustrative-placement-faq",
+    "answer": "Eligibility conditions may include academic performance, degree program, graduation year, and backlog status. Requirements differ between employers and must be checked in the current official notice.",
+    "source": "knowledge_base/faqs.json (illustrative example only; not verified SNJB policy)"
+  }
+]
